@@ -53,6 +53,19 @@
                         android:maxLines="1" />
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:src="@drawable/milk"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_gravity="end" />
+                </LinearLayout>
+
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/lytTopOfferImages"
                     android:overScrollMode="never"
@@ -81,6 +94,7 @@
 
                     <LinearLayout
                         android:id="@+id/layout_markers"
+                        android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -119,7 +133,7 @@
                                 android:padding="@dimen/_5sdp"
                                 android:text="@string/shop_by_category"
                                 android:textAlignment="viewStart"
-                                android:textColor="@color/colorPrimaryDark"
+                                android:textColor="@color/black"
                                 android:textSize="@dimen/_13ssp"
                                 android:textStyle="bold" />
 
@@ -171,6 +185,7 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
+                        android:visibility="visible"
                         android:layout_height="wrap_content">
 
                         <TextView
@@ -178,9 +193,10 @@
                             android:layout_height="wrap_content"
                             android:layout_toStartOf="@id/tvMoreFlashSale"
                             android:padding="@dimen/_5sdp"
-                            android:text="@string/flash_sale"
+                            android:text="Products"
+                            android:visibility="visible"
                             android:textAlignment="viewStart"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/black"
                             android:textSize="@dimen/_13ssp"
                             android:textStyle="bold" />
 
@@ -193,6 +209,7 @@
                             android:layout_centerVertical="true"
                             android:layout_marginEnd="@dimen/_10sdp"
                             android:padding="5dp"
+                            android:visibility="visible"
                             android:text="@string/view_all"
                             android:textColor="@color/colorSecondary"
                             android:textSize="@dimen/_12ssp"
@@ -204,6 +221,7 @@
                         android:id="@+id/tabLayout"
                         style="@style/AppTabLayout"
                         android:layout_width="match_parent"
+                        android:visibility="visible"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_1sdp"
                         android:layout_marginEnd="@dimen/_1sdp"
@@ -212,6 +230,7 @@
                     <androidx.viewpager.widget.ViewPager
                         android:id="@+id/viewPager"
                         android:layout_width="match_parent"
+                        android:visibility="visible"
                         android:layout_height="@dimen/_200sdp"
                         android:layout_marginTop="@dimen/_5sdp"
                         app:layout_behavior="@string/appbar_scrolling_view_behavior" />

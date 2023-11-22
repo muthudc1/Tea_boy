@@ -8,7 +8,7 @@ object Constant {
 
     //Admin panel url with it would be necessary to put "/"(slash) at end of the url (https://admin.panel.url/)
 //    const val MainBaseURL = "https://app.uptodoor.in/admin/"
-    const val MainBaseURL = "https://socialant.in/teaboy/admin/"
+    const val MainBaseURL = "https://socialant.in/teaboy/"
 
     //If you have eCart Website then place here website URL otherwise admin panel url with it would be necessary to put "/"(slash) at end of the url (https://admin.panel.url/)
     const val WebsiteUrl = "admin_panel_or_website_url_here"

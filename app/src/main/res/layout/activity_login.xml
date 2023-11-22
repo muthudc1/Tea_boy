@@ -14,8 +14,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:contentInsetStartWithNavigation="0dp"
-        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:titleTextColor="@color/colorPrimary"
+        android:backgroundTint="@color/notification_background"
+        android:background="@color/notification_background"
+        app:titleTextColor="@color/notification_background"
         local:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
     <ImageView
@@ -135,7 +136,7 @@
 
             <Button
                 android:id="@+id/tvSignUp"
-                android:visibility="gone"
+                android:visibility="visible"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_25sdp"
@@ -160,7 +161,7 @@
         android:background="@drawable/login_curve"
         android:backgroundTint="@color/white"
         android:padding="@dimen/_40sdp"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -242,7 +243,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:orientation="vertical"
-                android:visibility="gone">
+                android:visibility="visible">
 
                 <com.dreamz.uptodoor.ui.Pinview
                     android:id="@+id/pinViewOTP"
@@ -327,7 +328,7 @@
         android:background="@drawable/login_curve"
         android:backgroundTint="@color/white"
         android:padding="@dimen/_40sdp"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -434,7 +435,7 @@
         android:background="@drawable/login_curve"
         android:backgroundTint="@color/white"
         android:padding="@dimen/_40sdp"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <LinearLayout
             android:layout_width="match_parent"
