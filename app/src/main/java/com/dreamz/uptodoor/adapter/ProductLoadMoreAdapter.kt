@@ -71,7 +71,7 @@ class ProductLoadMoreAdapter(
                 }
 
                 if (product.indicator != "0") {
-                    holderParent.imgIndicator.visibility = View.VISIBLE
+//                    holderParent.imgIndicator.visibility = View.VISIBLE
                     if (product.indicator == "1") holderParent.imgIndicator.setImageResource(R.drawable.ic_veg_icon) else if (product.indicator == "2") holderParent.imgIndicator.setImageResource(
                         R.drawable.ic_non_veg_icon
                     )
@@ -299,7 +299,7 @@ class ProductLoadMoreAdapter(
                         session.getData(Constant.currency) + stringFormat("" + originalPrice)
                 } else {
                     holder.tvOriginalPrice.visibility = View.VISIBLE
-                    holder.showDiscount.visibility = View.VISIBLE
+//                    holder.showDiscount.visibility = View.VISIBLE
                 }
             } else {
                 holder.lytTimer.visibility = View.VISIBLE
